@@ -21,6 +21,17 @@ let parisTime = moment().tz("Europe/Paris");
 parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
 parisTimeElement.innerHTML = parisTime.format("hh:mm:ss[<small>]A[</small>]");
 }
+
+// Khartoum
+let khartoumElement = document.querySelector("#khartoum");
+if (khartoumElement) {
+let khartoumDateElement = khartoumElement.querySelector (".date");
+let khartoumTimeElement = khartoumElement.querySelector (".time");
+let khartoumTime = moment().tz("Africa/Khartoum");
+
+khartoumDateElement.innerHTML = khartoumTime.format("MMMM Do YYYY");
+khartoumTimeElement.innerHTML = khartoumTime.format("hh:mm:ss[<small>]A[</small>]");
+}
 }
 
 
